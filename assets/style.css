@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --maroon: #B91646;
+    --tan: #DFD8CA;
+    --lite: #FBF3E4;
+    --emerald: #105652;
+    
+
+} 
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100h;
+    justify-content: flex-start;
+    background: var(--lite);
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: var(--lite);
+    color: var(--emerald);
+ }
+
+header h1 {
+
+    font-size: 32px;
+    color: var(--emerald);
+}
+
+h1::after {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    content: 'Design Portfolio';
+    color: var(--maroon);
+    margin-left: 5px;
+  }
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--maroon);
+    
+    
+     
+}
+
+nav a {
+    color: var(--tan);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*.card {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 25%;
+}
+
+.card header {
+    padding: 20px;
+}
+
+#tech {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+    
+}*/
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--maroon); 
+    color: var(--tan);
+    margin-top: auto;
+}
