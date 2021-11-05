@@ -96,10 +96,10 @@ nav a:hover {
     width: 100%;
     margin-bottom: 25px;
     display: flex;
-    flex-wrap: wrap;
     background-image: url("./images/Javis3.jpg"); alt:"background";
     background-size: cover;
     background-position: center;
+    justify-content: flex-end;
 
 }
 
@@ -134,6 +134,7 @@ article p {
     border-radius: 10px;
     padding: 10px;
     flex: 0 0 400px;
+    
     
 }
 
@@ -175,6 +176,12 @@ article p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#myDiv {
+    text-align: center;
+    color: var(--emerald);
+    line-height: 25px;
 }
 
 footer {

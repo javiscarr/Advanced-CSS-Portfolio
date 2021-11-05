@@ -10,6 +10,8 @@
   </head>
   
     <body>
+
+       
       <!-- Header -->
       <header class="main-header">
           <h1>Javis'</h1>
@@ -32,13 +34,13 @@
               <section class="card">
                  <article id="aboutMe" class="card">
                      <h2>About Me</h2>
-                        <img src="./assets/images/chicago.jpg" alt="Javis";>
-                        <p>Hello, my name is Javis Carr and I am originally from a small town in Alabama called Camp Hill. 
+                        <img src="./assets/images/chicago.jpg" onclick="myFunction()" alt="Javis";></button>
+                        <div id="myDiv">Hello, my name is Javis Carr and I am originally from a small town in Alabama called Camp Hill. 
                             After graduating high school, I attended college at Alabama A&M University where I graduated in 2012 with a Bachelor's Degree in Industrial Technology
                             with a concentration on Graphics and Imaging Technology. Every since I was a small child, I have been fascinated with the ins and outs of technology and it's been
                             an ever growing passion of mine to someday gain all the experience that I desire to grow my skills. After successfully completing this 6-month bootcamp program, I plan
                             to gain employment where I am able to utilize the skills and knowledge that I will have gained from the projects and information taught throughout the course.
-                         </p>
+                        </div>
                  </article>
             </section>
             
@@ -66,6 +68,18 @@
         <footer>
             <p>Designed & Created by: Javis M. Carr 2021</p>
         </footer>
+
+        <script>
+            function myFunction(){
+                var x = document.getElementById("myDiv");
+                if (x.style.display ==="none"){
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                
+                }
+            }
+        </script>
     </body>
         
   </html>
