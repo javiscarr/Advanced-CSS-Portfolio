@@ -15,7 +15,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100h;
+    min-height: 100vh;
     justify-content: flex-start;
     background: var(--lite);
 }
@@ -54,6 +54,12 @@ h2 {
     margin: 2% 0;
     color: var(--emerald);
     font-size: 140%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    text-align: center;
+    color: var(--emerald);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -128,12 +134,14 @@ article p {
    
 }*/
 
+
 .card {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
     flex: 0 0 400px;
+    
     
     
 }
@@ -144,15 +152,24 @@ article p {
     border-radius: 10px;
     padding: 10px;
     flex: 0  400px;
-    margin-top: 100px;
+    margin-top: 50px;
+    
     
 }
+
+
 article h2 {
     text-align: center;
 }
 
-article p {
+article p  {
     text-align: center;
+   
+}
+
+article a {
+    text-decoration: none;
+    color: var(--maroon);
 }
 
 .card header {
@@ -166,6 +183,7 @@ article p {
     width: 100%;
     min-width: 400px;
 }
+
 
 
 
@@ -191,12 +209,68 @@ footer {
     color: var(--tan);
     margin-top: auto;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     header {
       flex-direction: column;
     }
   
-    main {
+/* main {
       max-width: 1200px;
+    }*/
+
+.main2 {
+    max-width:  1000px;
+    margin: auto;
+}
+  
+.row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .contents {
+    background-color: var(--lite);
+    padding: 10px;
+    text-align: center;
+    
+  }
+
+  .contents a:hover img {
+      transform: scale(1.5);
+      
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
     }
   }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+ 
