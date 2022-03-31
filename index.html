@@ -2,152 +2,293 @@
 <html lang="en-us">
 
 <head>
+  <title>Javis Carr</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Javis' Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/reset.css" />
   <link rel="stylesheet" type="text/css" href="assets/style.css" />
+
+
 </head>
 
 <body>
 
-
   <!-- Header -->
-  <header class="main-header">
-    <h1>Javis'</h1>
-  </header>
+  <div class="container-fluid">
 
+
+    <header>
+      <div>
+        <h1 class="main-header">Javis M. Carr</h1>
+      </div>
+
+    </header>
+  </div>
   <!--Navigation bar-->
+
   <nav>
 
-    <a href="#">Home</a>
+
     <a href="#aboutMe">About Me</a>
-    <a href="#contactInformation">Contact</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#myGallery">My Gallery</a>
+    <a href="#contact">Contact</a>
+
 
   </nav>
 
   <!--Background image-->
-  <div id="tech"></div>
+  <section>
+    <div>
+      <img src="./assets/images/Javis3.jpg" class="img-fluid" alt="All Aboard">
+    </div>
+  </section>
 
-  <div class="main2">
-    <main>
-      <!--About me section-->
-      <section class="card" id="aboutMe">
-        <article class="card">
-          <h2>About Me</h2>
-          <h3>Click picture below</h3>
-          <img src="./assets/images/chicago.jpg" onclick="myFunction()" alt="Javis" ;></button>
-          <div id="myDiv">Hello, my name is Javis Carr and I am originally from a small town in Alabama called Camp
-            Hill.
-            After graduating high school, I attended college at Alabama A&M University where I graduated in 2012 with a
-            Bachelor's Degree in Industrial Technology
-            with a concentration on Graphics and Imaging Technology. Every since I was a small child, I have been
-            fascinated with the ins and outs of technology and it's been
-            an ever growing passion of mine to someday gain all the experience that I desire to grow my skills. After
-            successfully completing this 6-month bootcamp program, I plan
-            to gain employment where I am able to utilize the skills and knowledge that I will have gained from the
-            projects and information taught throughout the course.
+
+  <!--About me section-->
+
+  <section id="aboutMe">
+
+    <div id="myImage">
+      <img src="./assets/images/chicago.jpg" class="card-img-top" alt="Javis in Chicago">
+    </div>
+
+    <div id="myContent">
+
+      <h2>About Me</h2>
+      <br>
+      <p>Hello, I'm Javis </p>
+
+      <br>
+      <p> Most of my life I've dreamed of someday having a career in technology. After completing high school,
+        I attended Alabama A&M University where I graduated in 2012 with a Bachelor's Degree in Industrial Technology
+        with a concentration on Graphics and Imaging Technology.
+        Every since I was a small child, I have been fascinated with the ins and outs of technology and it's been
+        an ever growing passion of mine to someday gain all the experience that I would need to grow my expertise.</p>
+
+      <br>
+      <p>So, I decided that the time is now to take a dive into that arena and aim towards my vision. My creative spirit
+        and
+        technologically advanced skills are the key components
+        that are keeping me focused and driven to complete this milestone. </p>
+
+      <br>
+      <p>It is my pleasure to welcome you to my page and hope that you would find joy in some of the work that I've
+        shared here.
+        Thank you for visiting!
+      </p>
+
+      <br>
+      <p>-Javis</p>
+    </div>
+
+  </section>
+
+  <section id="myGallery" class="gallery"></section>
+  <div>
+
+
+    <div id="gallery">
+      <h2>My Gallery</h2>
+      <p>Take a dive into some of the creative work I've recently done.</p>
+    </div>
+    </section>
+
+    <section id="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide container-sm" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/thrve.JPG" class="d-block w-100" alt="thrve-app">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>THRVE</h5>
+              <p>Putting the I back into THRiVE!</p>
+            </div>
           </div>
-        </article>
-      </section>
-      <!--Work Gallery section-->
-      <section class="card2" id="gallery">
-        <article class="card2">
-          <h2>Work Gallery</h2>
-          <img src="assets/images/deploy.jpg" id="deploy" width=500px height=auto alt="deploy">
-          <h2 class="links">Click on an image below for deployed links!!</h2>
+          <div class="carousel-item">
+            <img src="./assets/images/luckydog.JPG" class="d-block w-100" alt="You Lucky Dog">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>You Lucky Dog!</h5>
+              <p>Search for dogs available for adoption in their area using a zipcode.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/login.JPG" class="d-block w-100" alt="Tech Blog">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tech Blog</h5>
+              <p>Create a Tech Blog where you can read and write comments.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
 
-        </article>
-
-      </section>
+  </section>
 
 
 
 
 
 
+
+  <section>
+
+    <div class="container">
 
       <div class="row">
         <div class="column">
           <div class="contents">
+            <h3>THRVE Application</h3>
+            <h5>Click image for deployed application</h5>
+            <a href="https://thrve-app.herokuapp.com/login" alt="THRiVE">
+              <img src="assets/images/thrve.JPG" alt="THRiVE App" style="width:100%">
+            </a>
+
+
+            <a href="https://github.com/jesshaff/thrve-app" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="column">
+          <div class="contents">
+            <h3>You Lucky Dog!</h3>
+            <h5>Click image for deployed application</h5>
+            <a href="https://jddlwlr.github.io/You-Lucky-Dog/" alt="You-Lucky-Dog">
+              <img src="assets/images/luckydog.JPG" alt="THRiVE App" style="width:100%">
+            </a>
+
+
+            <a href="https://github.com/jddlwlr/You-Lucky-Dog" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="column">
+          <div class="contents">
+            <h3>Tech Blog</h3>
+            <h5>Click image for deployed application</h5>
+            <a href="https://javis-mvc-tech-blog.herokuapp.com/login" alt="Tech Blog">
+              <img src="assets/images/login.JPG" alt=" THRiVE App" style="width:100%">
+            </a>
+            <a href="https://github.com/javiscarr/MVC-Tech-Blog" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="column">
+          <div class="contents">
+            <h3>Password Generator</h3>
+            <h5>Click image for deployed application</h5>
             <a href="https://javiscarr.github.io/random-password-generator-javascript/" alt="Password Generator">
               <img src="assets/images/password.JPG" alt="Password Generator" style="width:100%"></a>
-            <h3>Password Generator</h3>
-            <p>Javascript</p>
-            <a href="https://github.com/javiscarr/random-password-generator-javascript"
-              class="repository">Repository</a>
+            <a href="https://github.com/javiscarr/random-password-generator-javascript" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
           </div>
         </div>
 
         <div class="column">
           <div class="contents">
+            <h3>Work Day Scheduler</h3>
+            <h5>Click image for deployed application</h5>
             <a href="https://javiscarr.github.io/Workday-Scheduler/" alt="Work Day Scheduler">
               <img src="assets/images/work day scheduler.JPG" alt="Work Day Scheduler" style="width:100%"></a>
-            <h3>Work Day Scheduler</h3>
-            <p>Third-Party APIs</p>
-            <a href="https://github.com/javiscarr/Workday-Scheduler" class="repository">Repository</a>
+            <a href="https://github.com/javiscarr/Workday-Scheduler" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
           </div>
         </div>
 
         <div class="column">
           <div class="contents">
+            <h3>Weather Dashboard</h3>
+            <h5>Click image for deployed application</h5>
             <a href="https://javiscarr.github.io/Weather-Dashboard/" alt="Weather Dashboard ">
               <img src="assets/images/citySearch1.JPG" alt="weather dashboard" style="width:100%"></a>
-            <h3>Weather Dashboard</h3>
-            <p>Server-Side APIs</p>
-            <a href="https://github.com/javiscarr/Weather-Dashboard" class="repository">Repository</a>
+            <a href="https://github.com/javiscarr/Weather-Dashboard" class="repository">
+              <h3>GitHub Repository</h3>
+            </a>
           </div>
         </div>
 
-        <div class="column">
-          <div class="contents">
-            <a href="https://jddlwlr.github.io/You-Lucky-Dog/" alt="You Lucky Dog">
-              <img src="assets/images/homepage.JPG" alt="You Lucky Dog" style="width:100%"></a>
-            <h3>You Lucky Dog!</h3>
-            <p>HTML/Javascript/CSS/Server-Side APIs</p>
-            <a href="https://github.com/jddlwlr/You-Lucky-Dog" class="repository">Repository</a>
-          </div>
-        </div>
 
       </div>
-      <!--Contact Information section-->
-      <section class="card2" id="contactInformation">
-        <article class="card2">
-          <h2>Contact Information</h2>
-          <img src="assets/images/contact.png" alt="contact me" width=300px height=150px>
-          <p>Javis M. Carr<br>
-            Phone: 256-323-1467<br>
-            Email: Javis.Carr@gmail.com
-            <br>
-            <br>
+    </div>
+  </section>
+  <!--Contact Information section-->
+  <section class="card2" id="contact">
+    <article class="card2">
+      <h2>Contact Information</h2>
+      <img src="assets/images/contact.png" alt="contact me" width=300px height=150px>
+      <p>Javis M. Carr<br>
+        Phone: 256-323-1467<br>
+        Email: Javis.Carr@gmail.com
+        <br>
+        <br>
 
-            <a href="https://github.com/javiscarr" alt="link to gitHub">
-              <img src="assets/images/github.png" id="logo" width=20px height=20px>GitHub Account</a>
-            <br>
-            <a href="https://www.linkedin.com/in/javis-carr-8a584533/" alt="linked">
-              <img src="assets/images/linkedin.png" id="logo" width=20px height=20px>Linkedin</a>
-          </p>
+        <a href="https://github.com/javiscarr" alt="link to gitHub">
+          <img src="assets/images/github.png" id="logo" width=20px height=20px>GitHub Account</a>
+        <br>
+        <a href="https://www.linkedin.com/in/javis-carr-8a584533/" alt="linked">
+          <img src="assets/images/linkedin.png" id="logo" width=20px height=20px>Linkedin</a>
+      </p>
 
-        </article>
-      </section>
+    </article>
+  </section>
 
-    </main>
-    <footer>
-      <p>© Designed & Created by: Javis M. Carr 2021</p>
-    </footer>
-    <!--script function used above to show and hide content in the about me section-->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myDiv");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
 
-        }
+
+  <footer>
+    <p>© Javis M. Carr 2021</p>
+  </footer>
+  <!--script function used above to show and hide content in the about me section-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+
       }
-    </script>
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
